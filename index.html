@@ -1,196 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fathima Amna | IT Student, Web Developer</title>
-  <meta name="description" content="Portfolio of Fathima Amna, an HNDIT student and aspiring IT Officer focused on web development, databases and software testing.">
-  <meta property="og:title" content="Fathima Amna | IT Student, Web Developer">
-  <meta property="og:description" content="Web development, databases and software testing projects.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/profile.jpg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%238B5CF6'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%2300F5D4' font-family='sans-serif' font-weight='700'>A</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fathima Amna | IT Professional in the Making</title>
+<meta name="description" content="Portfolio of Fathima Amna, HNDIT student focused on web development, databases and software testing.">
+<meta property="og:title" content="Fathima Amna | Portfolio">
+<meta property="og:description" content="Web development, databases and software testing projects.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/profile.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300F5D4'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' font-family='sans-serif' font-weight='700'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="glow" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a href="#home" class="logo">AMNA<span>.DEV</span></a>
-    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
-    <nav id="links" class="links" aria-label="Main">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
-      <button class="theme" id="theme" aria-label="Switch to light theme"><i class="bi bi-sun"></i></button>
-    </nav>
-  </div>
+  <a class="logo" href="#home">AMNA<span>.DEV</span></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <button class="theme" id="theme" aria-label="Switch theme">◐</button>
+  </nav>
 </header>
 
 <main id="main">
-<!-- HERO -->
-<section id="home" class="hero">
-  <span class="shape s1" aria-hidden="true"></span><span class="shape s2" aria-hidden="true"></span><span class="shape s3" aria-hidden="true"></span>
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <p class="hello">HELLO, WORLD! I'M</p>
-      <h1>Fathima Amna</h1>
-      <p class="role">IT Professional in the Making</p>
-      <p class="typed-line"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
-      <p class="intro">I'm passionate about technology, creative problem-solving, and building practical digital solutions. I enjoy exploring web development, databases, software testing, and emerging technologies.</p>
-      <div class="row">
-        <a href="#projects" class="btn primary">Explore My Work</a>
-        <a href="assets/cv.pdf" class="btn ghost" download="Fathima-Amna-CV.pdf"><i class="bi bi-download"></i> Download My CV</a>
-      </div>
-      <div class="row socials">
-        <a href="https://github.com/hazee-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/fathima-amna" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
+<section class="hero" id="home">
+  <span class="shape s1"></span><span class="shape s2"></span><span class="shape s3"></span>
+  <div class="hero-text">
+    <p class="hello">HELLO, WORLD! I'M</p>
+    <h1>Fathima Amna</h1>
+    <h2 class="grad">IT Professional in the Making</h2>
+    <p class="typed">I'm an <b id="typed"></b><span class="caret">|</span></p>
+    <p class="lead">I'm passionate about technology, creative problem-solving, and building practical digital solutions. I enjoy exploring web development, databases, software testing, and emerging technologies.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">Explore My Work</a>
+      <a class="btn ghost" id="cv" href="assets/cv.pdf" download data-cv-ready="false">Download My CV</a>
     </div>
-    <div class="avatar"><img src="images/profile.jpg" alt="Portrait of Fathima Amna" width="400" height="500"></div>
+    <div class="social">
+      <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.200 3.2-1.2.6 1.600.2 2.800.1 3.100.8.8 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.200c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.600c.6-1 2-1.900 4-1.900 4.100 0 4.700 2.700 4.700 6.200V21h-4v-5c0-1.300 0-3-1.900-3s-2.100 1.400-2.100 2.900V21h-4z"/></svg></a>
+    </div>
   </div>
-  <a href="#about" class="scroll" aria-label="Scroll to About"><i class="bi bi-chevron-double-down"></i></a>
+  <div class="hero-img">
+    <div class="ring"></div>
+    <img src="images/profile.jpg" alt="Portrait of Fathima Amna" width="420" height="520" onerror="this.style.visibility='hidden'">
+  </div>
+  <a class="scroll" href="#about" aria-label="Scroll to About"><span></span></a>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="sec">
-  <div class="wrap">
-    <header class="head reveal"><h2>About Me</h2><p>A little about my journey into technology.</p></header>
-    <div class="split">
-      <div class="reveal"><div class="avatar small"><img src="images/profile.jpg" alt="Fathima Amna smiling in a red hijab" loading="lazy" width="400" height="500"></div></div>
-      <div class="reveal">
-        <p>I'm an Information Technology student and aspiring IT professional with an interest in web development, database management, software testing, and IT support. I enjoy learning new technologies and applying my knowledge to practical projects.</p>
-        <div class="cards3">
-          <div class="glass"><i class="bi bi-puzzle"></i><h3>Problem Solver</h3></div>
-          <div class="glass"><i class="bi bi-book"></i><h3>Continuous Learner</h3></div>
-          <div class="glass"><i class="bi bi-palette"></i><h3>Creative Thinker</h3></div>
-        </div>
-        <p><strong>Career objective:</strong> to develop my technical skills and contribute to meaningful IT projects as an IT Officer, Web Developer, Database Developer or IT Support Professional.</p>
+  <div class="head reveal"><h2>About Me</h2><p>A little about my journey into technology.</p></div>
+  <div class="split">
+    <div class="reveal about-img"><img src="images/profile.jpg" alt="Fathima Amna smiling beside a flower arrangement" loading="lazy" onerror="this.style.visibility='hidden'"></div>
+    <div class="reveal">
+      <p>I'm an Information Technology student and aspiring IT professional with an interest in web development, database management, software testing, and IT support. I enjoy learning new technologies and applying my knowledge to practical projects.</p>
+      <div class="cards3">
+        <div class="glass"><h3>Problem Solver</h3><p>Breaking issues into clear steps.</p></div>
+        <div class="glass"><h3>Continuous Learner</h3><p>Always exploring new tools.</p></div>
+        <div class="glass"><h3>Creative Thinker</h3><p>Looking for practical ideas.</p></div>
       </div>
+      <p class="objective"><b>Career objective:</b> To develop my technical skills and contribute to meaningful IT projects.</p>
     </div>
-
-    <!-- EDUCATION: edit the text inside each .tl-card -->
-    <header class="head reveal" style="margin-top:5rem"><h2>Education</h2></header>
-    <ol class="timeline">
-      <li class="reveal"><span class="marker"></span><div class="glass tl-card">
-        <h3>Higher National Diploma in Information Technology (HNDIT)</h3>
-        <p class="muted">ATI-Batticaloa | 2024 – 2026</p>
-        <div class="tags"><span>Web Development</span><span>Database Management</span><span>Software Engineering</span><span>Programming</span><span>Software Quality Assurance</span><span>Mobile Application Development</span></div>
-      </div></li>
-    </ol>
   </div>
+
+  <div class="head reveal" style="margin-top:5rem"><h2>Education</h2></div>
+  <ol class="timeline">
+    <li class="reveal"><span class="dot"></span>
+      <div class="glass"><small>2024 – 2026</small><h3>Higher National Diploma in Information Technology (HNDIT)</h3><p>ATI-BATTICALOA</p>
+      <ul class="tags"><li>Web Development</li><li>Database Management</li><li>Software Engineering</li><li>Programming</li><li>Software Quality Assurance</li><li>Mobile Application Development</li></ul></div>
+    </li>
+  </ol>
 </section>
 
-<!-- SKILLS: edit the labels (Beginner / Intermediate / Proficient) -->
 <section id="skills" class="sec alt">
-  <div class="wrap">
-    <header class="head reveal"><h2>My Technical Toolkit</h2><p>Labels are self-assessed and editable.</p></header>
-    <div class="grid3">
-      <div class="glass reveal"><h3><i class="bi bi-window"></i> Frontend</h3><ul class="skills">
-        <li><i class="bi bi-filetype-html"></i>HTML5<em>Intermediate</em></li><li><i class="bi bi-filetype-css"></i>CSS3<em>Intermediate</em></li><li><i class="bi bi-filetype-js"></i>JavaScript<em>Beginner</em></li><li><i class="bi bi-bootstrap"></i>Bootstrap<em>Intermediate</em></li></ul></div>
-      <div class="glass reveal"><h3><i class="bi bi-database"></i> Backend and Database</h3><ul class="skills">
-        <li><i class="bi bi-filetype-php"></i>PHP<em>Intermediate</em></li><li><i class="bi bi-database-fill"></i>MySQL<em>Intermediate</em></li></ul></div>
-      <div class="glass reveal"><h3><i class="bi bi-code-slash"></i> Programming</h3><ul class="skills">
-        <li><i class="bi bi-filetype-java"></i>Java<em>Intermediate</em></li><li><i class="bi bi-phone"></i>Kotlin<em>Beginner</em></li><li><i class="bi bi-phone-fill"></i>Dart<em>Beginner</em></li></ul></div>
-      <div class="glass reveal"><h3><i class="bi bi-bug"></i> Testing</h3><ul class="skills">
-        <li><i class="bi bi-check2-square"></i>Selenium WebDriver<em>Intermediate</em></li><li><i class="bi bi-list-check"></i>TestNG<em>Intermediate</em></li><li><i class="bi bi-box-seam"></i>Maven<em>Beginner</em></li></ul></div>
-      <div class="glass reveal"><h3><i class="bi bi-wrench"></i> Tools</h3><ul class="skills">
-        <li><i class="bi bi-code-square"></i>Visual Studio Code<em>Intermediate</em></li><li><i class="bi bi-hdd-stack"></i>XAMPP<em>Intermediate</em></li><li><i class="bi bi-cpu"></i>IntelliJ IDEA<em>Intermediate</em></li><li><i class="bi bi-git"></i>Git and GitHub<em>Beginner</em></li></ul></div>
-    </div>
+  <div class="head reveal"><h2>My Technical Toolkit</h2><p>Technologies I have worked with during my studies and projects.</p></div>
+  <div class="grid4">
+    <div class="glass reveal"><h3>Frontend</h3><ul class="skills"><li><i class="devicon-html5-plain colored"></i>HTML5</li><li><i class="devicon-css3-plain colored"></i>CSS3</li><li><i class="devicon-javascript-plain colored"></i>JavaScript</li><li><i class="devicon-bootstrap-plain colored"></i>Bootstrap</li></ul></div>
+    <div class="glass reveal"><h3>Backend &amp; Database</h3><ul class="skills"><li><i class="devicon-php-plain colored"></i>PHP</li><li><i class="devicon-mysql-plain colored"></i>MySQL</li></ul></div>
+    <div class="glass reveal"><h3>Programming</h3><ul class="skills"><li><i class="devicon-java-plain colored"></i>Java</li><li><i class="devicon-kotlin-plain colored"></i>Kotlin</li><li><i class="devicon-dart-plain colored"></i>Dart</li></ul></div>
+    <div class="glass reveal"><h3>Testing</h3><ul class="skills"><li><i class="devicon-selenium-original colored"></i>Selenium WebDriver</li><li><i class="devicon-java-plain"></i>TestNG</li><li><i class="devicon-maven-plain colored"></i>Maven</li></ul></div>
+    <div class="glass reveal"><h3>Tools</h3><ul class="skills"><li><i class="devicon-vscode-plain colored"></i>Visual Studio Code</li><li><i class="devicon-apache-plain colored"></i>XAMPP</li><li><i class="devicon-intellij-plain colored"></i>IntelliJ IDEA</li><li><i class="devicon-github-original"></i>Git and GitHub</li></ul></div>
   </div>
 </section>
 
-<!-- PROJECTS: replace the GitHub links (href="#") with your real repository URLs -->
 <section id="projects" class="sec">
-  <div class="wrap">
-    <header class="head reveal"><h2>Featured Projects</h2></header>
-    <div class="filters" role="group" aria-label="Filter projects">
-      <button class="chip on" data-filter="all" aria-pressed="true">All Projects</button>
-      <button class="chip" data-filter="web" aria-pressed="false">Web Development</button>
-      <button class="chip" data-filter="testing" aria-pressed="false">Automation Testing</button>
-      <button class="chip" data-filter="other" aria-pressed="false">Other Projects</button>
-    </div>
-    <div class="grid3">
-      <article class="glass proj reveal" data-cat="web">
-        <div class="shot"><img src="images/wedding-project.jpg" alt="Wedding Event Management System screenshot placeholder" loading="lazy" width="800" height="500"></div>
-        <div class="proj-body"><h3>Wedding Event Management System</h3>
-          <p>A web-based application designed to help clients organize wedding details, explore service providers, view packages, and manage bookings.</p>
-          <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span></div>
-          <div class="row"><button class="btn primary sm" data-title="Wedding Event Management System" data-text="Add your detailed description, key features and screenshots here.">View Details</button><a class="btn ghost sm" href="#" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></div></div>
-      </article>
-      <article class="glass proj reveal" data-cat="testing">
-        <div class="shot"><img src="images/testing-project.jpg" alt="Selenium testing project screenshot placeholder" loading="lazy" width="800" height="500"></div>
-        <div class="proj-body"><h3>Selenium Automation Testing Project</h3>
-          <p>An automated testing project that validates web application workflows using Selenium WebDriver and Java, with structured test execution and reporting.</p>
-          <div class="tags"><span>Java</span><span>Selenium WebDriver</span><span>TestNG</span><span>Maven</span><span>ExtentReports</span></div>
-          <div class="row"><button class="btn primary sm" data-title="Selenium Automation Testing Project" data-text="Add the workflows you tested, how tests are run and what the reports show.">View Details</button><a class="btn ghost sm" href="#" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></div></div>
-      </article>
-      <article class="glass proj reveal" data-cat="other">
-        <div class="shot"><div class="ph"><i class="bi bi-bag"></i></div></div>
-        <div class="proj-body"><h3>T-Shirt Ordering System</h3>
-          <p>An ordering system for t-shirts built with C#. Add a fuller project description here.</p>
-          <div class="tags"><span>C#</span></div>
-          <div class="row"><button class="btn primary sm" data-title="T-Shirt Ordering System" data-text="Add your description, features and screenshots here.">View Details</button><a class="btn ghost sm" href="#" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></div></div>
-      </article>
-    </div>
+  <div class="head reveal"><h2>Featured Projects</h2><p>Academic projects built while studying IT.</p></div>
+  <div class="filters reveal" role="group" aria-label="Filter projects">
+    <button class="chip on" data-f="all">All Projects</button><button class="chip" data-f="web">Web Development</button><button class="chip" data-f="testing">Automation Testing</button><button class="chip" data-f="other">Other Projects</button>
   </div>
+  <div class="grid3" id="projectGrid">
+    <article class="project glass" data-cat="web">
+      <div class="shot"><img src="images/wedding-portfolio.jpg" alt="Wedding Event Management System preview" loading="lazy"></div>
+      <h3>Wedding Event Management System</h3>
+      <p>A web-based application designed to help clients organize wedding details, explore service providers, view packages, and manage bookings.</p>
+      <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li></ul>
+      <div class="row"><button class="btn small primary" data-open>View Details</button><a class="btn small ghost" href="https://github.com/YOUR-USERNAME/wedding-event-management" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+    <article class="project glass" data-cat="testing">
+      <div class="shot"><img src="images/testng-portfolio.jpg" alt="Selenium Automation Testing Project preview" loading="lazy"></div>
+      <h3>Selenium Automation Testing Project</h3>
+      <p>An automated testing project that validates web application workflows using Selenium WebDriver and Java, with structured test execution and reporting.</p>
+      <ul class="tags"><li>Java</li><li>Selenium WebDriver</li><li>TestNG</li><li>Maven</li><li>ExtentReports</li></ul>
+      <div class="row"><button class="btn small primary" data-open>View Details</button><a class="btn small ghost" href="https://github.com/YOUR-USERNAME/selenium-testing" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+    <article class="project glass" data-cat="other web">
+      <div class="shot"><img src="images/tshirt-portfolio.jpg" alt="T-Shirt Ordering System preview" loading="lazy"></div>
+      <h3>T-Shirt Ordering System</h3>
+      <p>A web-based application designed to help clients organize t-shirt details and manage bookings.</p>
+      <ul class="tags"><li>Web-based</li></ul>
+      <div class="row"><button class="btn small primary" data-open>View Details</button><a class="btn small ghost" href="https://github.com/YOUR-USERNAME/tshirt-ordering" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+  </div>
+  <p class="note">GitHub links are placeholders until you add your real repository URLs.</p>
 </section>
 
-<!-- EXPERIENCE (placeholder: fill in, or delete this whole <section> and its nav link) -->
+<!-- To hide a section you don't need, add the "hidden" attribute: <section id="experience" hidden> (and remove its nav link) -->
 <section id="experience" class="sec alt">
-  <div class="wrap">
-    <header class="head reveal"><h2>Experience</h2><p>Internships, training and practical work will appear here.</p></header>
-    <ol class="timeline">
-      <li class="reveal"><span class="marker"></span><div class="glass tl-card">
-        <h3>Position, Organization</h3><p class="muted">Duration</p>
-        <p>Responsibilities: to be added.<br>Technologies used: to be added.</p></div></li>
-    </ol>
+  <div class="head reveal"><h2>Experience</h2><p>Internships, training and practical work.</p></div>
+  <ol class="timeline">
+    <li class="reveal"><span class="dot"></span><div class="glass"><small>[Duration]</small><h3>[Position, e.g. Intern]</h3><p>[Organization name]</p><p>[Responsibilities: replace with what you actually did.]</p><ul class="tags"><li>[Technologies used]</li></ul></div></li>
+    <li class="reveal"><span class="dot"></span><div class="glass"><small>2024 – 2026</small><h3>Academic Projects</h3><p>ATI-BATTICALOA</p><p>Web, database and testing projects completed during the HNDIT programme.</p><ul class="tags"><li>PHP</li><li>MySQL</li><li>Selenium</li></ul></div></li>
+  </ol>
 
-    <header class="head reveal" style="margin-top:4rem"><h2>Achievements and Certifications</h2></header>
-    <!-- Copy this card per real certificate: title, issuer, date, image, verification link -->
-    <div class="glass reveal"><p style="margin:0">Genuine certificates and achievements will be added here once I have them to share.</p></div>
+  <div class="head reveal" style="margin-top:5rem"><h2>Certifications</h2><p>Professional development.</p></div>
+  <div class="grid3">
+    <div class="glass reveal"><small>3 months</small><h3>DyeNed English Programming</h3><p>American Corner Batticaloa</p></div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="sec">
-  <div class="wrap">
-    <header class="head reveal"><h2>Let's Build Something Great</h2><p>Have an opportunity or project in mind? Let's connect.</p></header>
-    <div class="split top">
-      <div class="reveal">
-        <p><a class="clink" href="mailto:fathimaamna200426@gmail.com"><i class="bi bi-envelope"></i> fathimaamna200426@gmail.com</a></p>
-        <p><a class="clink" href="https://github.com/hazee-dev" target="_blank" rel="noopener"><i class="bi bi-github"></i> github.com/hazee-dev</a></p>
-        <p><a class="clink" href="https://www.linkedin.com/in/fathima-amna" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> linkedin.com/in/fathima-amna</a></p>
-      </div>
-      <form id="form" class="glass reveal" novalidate>
-        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="field"><input id="name" name="name" placeholder=" " required maxlength="80" autocomplete="name"><label for="name">Name</label><small id="nameErr"></small></div>
-        <div class="field"><input id="email" name="email" type="email" placeholder=" " required maxlength="120" autocomplete="email"><label for="email">Email</label><small id="emailErr"></small></div>
-        <div class="field"><input id="subject" name="subject" placeholder=" " required maxlength="120"><label for="subject">Subject</label><small id="subjectErr"></small></div>
-        <div class="field"><textarea id="message" name="message" rows="5" placeholder=" " required maxlength="1500"></textarea><label for="message">Message</label><small id="messageErr"></small></div>
-        <button class="btn primary" type="submit">Send Message</button>
-        <p id="status" role="status" aria-live="polite"></p>
-      </form>
+  <div class="head reveal"><h2>Let's Build Something Great</h2><p>Have an opportunity or project in mind? Let's connect.</p></div>
+  <div class="split">
+    <div class="reveal">
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub profile</a></p>
+      <p><a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn profile</a></p>
     </div>
+    <form id="form" class="reveal glass" novalidate>
+      <div class="f"><input id="name" name="name" placeholder=" " required autocomplete="name"><label for="name">Name</label><em></em></div>
+      <div class="f"><input id="email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="email">Email</label><em></em></div>
+      <div class="f"><input id="subject" name="subject" placeholder=" " required><label for="subject">Subject</label><em></em></div>
+      <div class="f"><textarea id="message" name="message" rows="5" placeholder=" " required></textarea><label for="message">Message</label><em></em></div>
+      <button class="btn primary" type="submit">Send Message</button>
+      <p id="status" role="status"></p>
+    </form>
   </div>
 </section>
 </main>
 
-<footer class="footer">
-  <div class="wrap foot-in">
-    <div><a href="#home" class="logo">AMNA<span>.DEV</span></a><p class="muted">Learning, building and testing, one project at a time.</p></div>
-    <nav aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-    <div class="row socials"><a href="https://github.com/hazee-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a><a href="https://www.linkedin.com/in/fathima-amna" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
-  </div>
-  <p class="copy muted">&copy; <span id="year"></span> Fathima Amna</p>
+<footer class="foot">
+  <a class="logo" href="#home">AMNA<span>.DEV</span></a>
+  <p>Learning, building and testing, one project at a time.</p>
+  <nav aria-label="Footer"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a></nav>
+  <small>© <span id="year"></span> Fathima Amna</small>
 </footer>
-<button id="top" class="top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<a href="#home" class="top" id="top" aria-label="Back to top">↑</a>
+<div class="toast" id="toast" role="status"></div>
 
-<dialog id="modal" class="modal" aria-labelledby="mTitle"><h3 id="mTitle"></h3><p id="mText"></p><button class="btn primary sm" id="mClose">Close</button></dialog>
-
+<dialog id="modal" aria-labelledby="mTitle">
+  <button class="close" id="close" aria-label="Close">×</button>
+  <img id="mImg" alt="">
+  <h3 id="mTitle"></h3><p id="mDesc"></p><ul class="tags" id="mTags"></ul>
+  <p class="note">Not deployed online. Add a live link here only when one exists.</p>
+</dialog>
 <script src="js/script.js"></script>
 </body>
 </html>
